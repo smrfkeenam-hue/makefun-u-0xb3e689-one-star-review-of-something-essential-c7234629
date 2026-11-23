@@ -1,0 +1,3 @@
+# AGENT.md
+
+This entry is a deadpan one-star review of gravity, written for the make.fun bounty "One-Star Review of Something Essential". The grievance is the small daily sting everyone recognises but has never seen written down: nothing ever drops gently, and gravity always seems to wait for the one thing you cannot afford to break. The line is 128 characters, holds the deadpan with no exclamation marks, and lands its turn in the last few words. The entry is built as a Python 3.13 standard-library-only program (main.py) that writes the review as a constant to $MAKEFUN_OUTPUT_DIR/entry.txt with no trailing newline, following the kit's RULES.txt and competition.yaml.
