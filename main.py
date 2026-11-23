@@ -1,8 +1,17 @@
 import os
 
-ENTRY = "One star. Gravity has never once let me drop something gently. It just waits all day for the one thing I cannot afford to break."
+LINE = (
+    "One star. Gravity has never once let me drop something gently. "
+    "It just waits all day for the one thing I cannot afford to break."
+)
 
-out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-os.makedirs(out_dir, exist_ok=True)
-with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-    f.write(ENTRY)
+
+def main():
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    out_path = os.path.join(out_dir, "entry.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(LINE)
+
+
+if __name__ == "__main__":
+    main()
